@@ -22,8 +22,10 @@
       </nav>
     </header>
 
-    <main class="page">
+    <main class="document">
+      <article class="notion-page">
       <section class="page-head">
+        <div class="page-icon support-icon" aria-hidden="true"></div>
         <p class="eyebrow">Support</p>
         <h1>サポート</h1>
         <p class="lead">
@@ -31,22 +33,38 @@
         </p>
       </section>
 
-      <section class="section support-lead">
+      <dl class="properties" aria-label="ページ情報">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2>お問い合わせ</h2>
+          <dt>問い合わせ</dt>
+          <dd>GitHub Issues</dd>
         </div>
-        <div class="contact-box">
-          <p>現在のお問い合わせ先は GitHub Issues です。不具合、機能要望、表記の気になる点を送れます。</p>
-          <a class="button primary" href="https://github.com/ogi-091/tsumitate-note-site/issues/new" rel="noopener noreferrer">
-            問い合わせを作成
-          </a>
-          <p class="small">GitHubアカウントが必要です。メール窓口は準備が整い次第、このページに追加します。</p>
+        <div>
+          <dt>対象</dt>
+          <dd>不具合、機能要望、表記の確認</dd>
         </div>
+        <div>
+          <dt>メール窓口</dt>
+          <dd>準備中</dd>
+        </div>
+      </dl>
+
+      <aside class="callout">
+        <span class="callout-mark" aria-hidden="true">i</span>
+        <p>GitHubの利用にはGitHubアカウントが必要です。メール窓口は準備が整い次第、このページに追加します。</p>
+      </aside>
+
+      <section class="section">
+        <h2>お問い合わせ</h2>
+        <a class="bookmark" href="https://github.com/ogi-091/tsumitate-note-site/issues/new" rel="noopener noreferrer">
+          <span class="bookmark-icon" aria-hidden="true"></span>
+          <span>
+            <strong>問い合わせを作成</strong>
+            <small>GitHub Issuesで不具合、機能要望、表記の気になる点を送れます。</small>
+          </span>
+        </a>
       </section>
 
       <section class="section">
-        <p class="section-kicker">FAQ</p>
         <h2>よくある質問</h2>
         <div class="faq-list" role="list">
           <details class="faq-item" open>
@@ -73,12 +91,12 @@
       </section>
 
       <section class="notice">
-        <p class="section-kicker">Calculation note</p>
         <h2>計算前提</h2>
         <p>
           想定年利が一定で続く前提で計算します。表示金額は端数処理により実際の計算結果と差が出る場合があります。
         </p>
       </section>
+      </article>
     </main>
 
     <footer class="site-footer">
