@@ -13,8 +13,8 @@
   <body>
     <header class="site-header">
       <a class="brand" href="../" aria-label="つみたてノート ホーム">
-        <span class="brand-mark" aria-hidden="true">積</span>
-        <span>つみたてノート</span>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">つみたてノート</span>
       </a>
       <nav class="nav" aria-label="主要リンク">
         <a href="./" aria-current="page">サポート</a>
@@ -27,52 +27,53 @@
         <p class="eyebrow">Support</p>
         <h1>サポート</h1>
         <p class="lead">
-          不具合、操作で困ったこと、機能要望があれば、以下の問い合わせ先からご連絡ください。
+          操作で困ったとき、気になる挙動を見つけたときの連絡先と、よくある質問をまとめました。
         </p>
       </section>
 
-      <section class="section">
-        <h2>お問い合わせ</h2>
+      <section class="section support-lead">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>お問い合わせ</h2>
+        </div>
         <div class="contact-box">
-          <p>
-            現在のお問い合わせ先は GitHub Issues です。内容を確認し、今後の改善に活用します。
-          </p>
-          <a class="button primary" href="https://github.com/ogi-091/tsumitate-note-site/issues" rel="noopener noreferrer">
-            GitHub Issuesを開く
+          <p>現在のお問い合わせ先は GitHub Issues です。不具合、機能要望、表記の気になる点を送れます。</p>
+          <a class="button primary" href="https://github.com/ogi-091/tsumitate-note-site/issues/new" rel="noopener noreferrer">
+            問い合わせを作成
           </a>
-          <p class="small">
-            GitHubの利用にはGitHubアカウントが必要です。メール窓口は公開準備が整い次第、こちらに追加します。
-          </p>
+          <p class="small">GitHubアカウントが必要です。メール窓口は準備が整い次第、このページに追加します。</p>
         </div>
       </section>
 
       <section class="section">
+        <p class="section-kicker">FAQ</p>
         <h2>よくある質問</h2>
-        <div class="faq-list">
-          <article class="faq-item">
-            <h3>計算結果は将来の成果を保証しますか？</h3>
+        <div class="faq-list" role="list">
+          <details class="faq-item" open>
+            <summary>計算結果は将来の成果を保証しますか？</summary>
             <p>いいえ。入力条件にもとづく概算であり、将来の成果を保証するものではありません。</p>
-          </article>
-          <article class="faq-item">
-            <h3>税金や手数料は考慮されていますか？</h3>
+          </details>
+          <details class="faq-item">
+            <summary>税金や手数料は考慮されていますか？</summary>
             <p>いいえ。税金、手数料、信託報酬、インフレは考慮していません。</p>
-          </article>
-          <article class="faq-item">
-            <h3>特定の金融商品をおすすめするアプリですか？</h3>
+          </details>
+          <details class="faq-item">
+            <summary>特定の金融商品をおすすめするアプリですか？</summary>
             <p>いいえ。金融商品の推奨、証券会社の推奨、口座開設への誘導は行いません。</p>
-          </article>
-          <article class="faq-item">
-            <h3>保存したデータはどこに保存されますか？</h3>
+          </details>
+          <details class="faq-item">
+            <summary>保存したデータはどこに保存されますか？</summary>
             <p>入力したプランは端末内に保存されます。ログインやクラウド同期は現在対応していません。</p>
-          </article>
-          <article class="faq-item">
-            <h3>無料版とPlusの違いは何ですか？</h3>
+          </details>
+          <details class="faq-item">
+            <summary>無料版とPlusの違いは何ですか？</summary>
             <p>無料版では基本の試算と一定件数の保存が使えます。Plusでは広告なし、保存件数の拡張、比較機能などの追加を予定しています。</p>
-          </article>
+          </details>
         </div>
       </section>
 
       <section class="notice">
+        <p class="section-kicker">Calculation note</p>
         <h2>計算前提</h2>
         <p>
           想定年利が一定で続く前提で計算します。表示金額は端数処理により実際の計算結果と差が出る場合があります。
